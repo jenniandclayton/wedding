@@ -1,0 +1,54 @@
+#view-home{
+}
+
+#view-home table{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+}
+
+#view-home .title{
+	text-align:center;
+	height:100px;
+	font-family: 'MonteCarlo', cursive;
+	font-size:36px;
+	color:#323232;
+}
+
+#view-home .title hr{
+	border-color:rgba(0,0,0,0.15);
+	width:75px;
+	margin:auto;
+}
+
+#view-home .title .sub-title{
+	font-size:16px;
+	font-family: 'Cormorant Garamond', serif;
+	margin-top:6px;
+	margin-bottom:5px;
+	color:#1a1a1a;
+}
+
+#view-home .left-view{
+	text-align:right;
+	padding-right:20px;
+}
+
+#view-home .right-view{
+	text-align:left;
+	padding-left:20px;
+}
+
+#view-home .photo{
+	text-align:center;
+	width:20vw;
+	background-color:#ddd;
+	border:1px solid rgba(0,0,0,0.25);
+	border-radius:50%;
+	background-image:url( ../img/test_image.png );
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
