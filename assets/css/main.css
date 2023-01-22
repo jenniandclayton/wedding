@@ -1,3 +1,14 @@
+html, body{
+	padding:0 !important;
+	margin :0 !important;
+}
+
+html{
+	display:none;
+	background-color:#DCD0FF;
+	background-image:url( ../img/home_background.png );
+}
+
 hr{
 	border:0;
 	border-top:1px solid #000;

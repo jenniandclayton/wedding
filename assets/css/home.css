@@ -1,19 +1,28 @@
 #view-home{
 }
 
+#view-home .home-content{
+	background:#fff;
+	margin:auto;
+	width:450px;
+	height:auto;
+	padding-bottom:15px;
+	margin-bottom :50px;
+	border-left  :1px solid #ccc;
+	border-right :1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	box-shadow:0 0 0 5px #fff, 0 6px 30px 0 rgba(0,0,0,0.5);
+}
+
 #view-home table{
-	position:fixed;
-	top:0;
-	left:0;
-	width:100vw;
-	height:100vh;
+	width:100%;
 }
 
 #view-home .title{
 	text-align:center;
 	height:100px;
 	font-family: 'MonteCarlo', cursive;
-	font-size:36px;
+	font-size:40px;
 	color:#323232;
 }
 
@@ -24,31 +33,50 @@
 }
 
 #view-home .title .sub-title{
-	font-size:16px;
+	font-size:18px;
 	font-family: 'Cormorant Garamond', serif;
-	margin-top:6px;
+	margin-top:10px;
 	margin-bottom:5px;
 	color:#1a1a1a;
 }
 
-#view-home .left-view{
-	text-align:right;
-	padding-right:20px;
-}
-
-#view-home .right-view{
-	text-align:left;
-	padding-left:20px;
-}
-
-#view-home .photo{
+#view-home .button-column{
 	text-align:center;
-	width:20vw;
-	background-color:#ddd;
-	border:1px solid rgba(0,0,0,0.25);
-	border-radius:50%;
-	background-image:url( ../img/test_image.png );
-	background-position:center;
-	background-size:cover;
-	background-repeat:no-repeat;
+	vertical-align:top;
+	padding-top:10px;
+}
+
+#view-home .home-button{
+	display:inline-block;
+	position:relative;
+	width:100px;
+	padding:10px;
+	margin:10px auto;
+	background:#fff;
+	border:5px solid transparent;
+	box-shadow:0 0 0 1px inset #a1a1a1, 2px 2px 6px -1px rgba(0,0,0,0.5);
+	outline   :1px solid       #a1a1a1;
+	cursor:pointer;
+}
+
+#view-home .home-button:hover{
+	background  :#F2EDFF;
+	border-color:#E1D6FF;
+}
+
+#view-home .home-button .curly-line-break{
+	position:absolute;
+	pointer-events:none;
+	margin:auto;
+	top:10px;
+	bottom:0;
+	height:90px;
+	left:-107px;
+	opacity:0.5;
+}
+
+#view-home .home-button .curly-line-break:nth-child(2){
+	left : auto;
+	right:-107px;
+	transform:scaleX(-1);
 }

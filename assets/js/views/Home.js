@@ -1,10 +1,7 @@
 WED.views.home = {};
 
 WED.views.home.load = function(){
-	this.left_views  = [ 'Ceremony' , 'Test 3' ];
-	this.right_views = [ 'Reception', 'Test 4' ];
-
-	this.num_rows = Math.max( this.left_views.length, this.right_views.length );
+	this.pages = [ 'RSVP', 'Ceremony', 'Reception', 'Registry', 'Attire', 'Guests' ];
 
 	this.draw();
 };
@@ -14,27 +11,29 @@ WED.views.home.draw = function(){
 
 	$( 'body' ).html(
 		'<div id="view-home">' +
-			'<table>' +
-				'<tr>' +
-					'<td class="title" colspan="3">' + 
-						'Jenni and Clayton<hr>' + 
-						'<div class="sub-title">May 4, 2024 &nbsp; &bull; &nbsp; Lake Windsor Country Club</div>' +
-					'</td>' +
-				'</tr>' +
-				'<tr>' +
-					'<td class="left-view">' + this.left_views[ 0 ] + '</td>' +
-					'<td class="photo" rowspan="' + this.num_rows + '"></td>' +
-					'<td class="right-view">' + this.right_views[ 0 ] + '</td>' +
-				'</tr>' +
-				this.left_views.slice( 1 ).map(function( x, i ){
-					var idx = i + 1;
-					return '<tr>' +	
-						'<td class="left-view">'  + self.left_views[  idx ] + '</td>' +
-						'<td class="right-view">' + self.right_views[ idx ] + '</td>' +
-					'</tr>';
-				}).join('') +
-				'<tr><td class="padding" colspan="3" ></td></tr>' +
-			'</table>' +
+			'<div class="home-content">' +
+				'<table>' +
+					'<tr>' +
+						'<td class="title">' + 
+							'Jenni and Clayton<hr>' + 
+							'<div class="sub-title">May 4, 2024 &nbsp; &bull; &nbsp; Lake Windsor Country Club</div>' +
+						'</td>' +
+					'</tr>' +
+					'<tr>' +
+						'<td class="button-column">' +
+							this.pages.map(function( x ){
+								return '<div class="home-button">' + 
+									'<img class="curly-line-break" src="./assets/img/curly_line_break.png" />' +
+									x + 
+									'<img class="curly-line-break" src="./assets/img/curly_line_break.png" />' +
+								'</div>';
+							}).join('<br>') +
+						'</td>' +
+					'</tr>' +
+				'</table>' +
+			'</div>' +
 		'</div>'
 	);
+
+	$( 'html' ).fadeIn( 1000 );
 };
