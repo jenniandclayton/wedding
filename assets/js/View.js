@@ -1,5 +1,12 @@
 WED.view = {};
 
+WED.view.html_page_header = function( name ){
+	return '<div class="page-header">' +
+		name + 
+		'<img class="line-break" src="./assets/img/simple_line_break.png" />' +
+	'</div>';
+};
+
 WED.view.draw = function( p ){
 	$( 'body' ).html(
 		'<div class="content">' +

@@ -1,0 +1,37 @@
+.timeline{
+	margin:20px auto;
+}
+
+.timeline *{
+	font-family:'Cormorant Garamond', serif;
+}
+
+.timeline .divider{
+	margin:10px auto;
+	opacity:0.75;
+}
+
+.timeline .event{
+}
+
+.timeline .event .name{
+	font-size:16px;
+	font-family:'Lora', serif;
+}
+
+.timeline .event hr{
+	margin:5px auto;
+	width :30px;
+	border-color:rgba(0,0,0,0.4);
+}
+
+.timeline .event .loc{
+	font-style:italic;
+	font-size:16px;
+}
+
+.timeline .event .time{
+	font-size:16px;
+	font-family:'Lora', serif;
+	margin-top:4px;
+}
