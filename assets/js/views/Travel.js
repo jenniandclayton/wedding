@@ -9,6 +9,15 @@ WED.views.travel.load = function(){
 WED.views.travel.draw = function(){
 	WED.view.draw({
 		content : WED.view.html_page_header( this.name ) + 
+			'<div class="address">' +
+				[
+					'Lake Windsor Country Club',
+					'4628 Golf Road',
+					'Windsor, WI 53598',
+				].map(function( line ){
+					return '<div class="line">' + line + '</div>';
+				}).join('') +
+			'</div>' +
 			this.map_iframe,
 	});
 };

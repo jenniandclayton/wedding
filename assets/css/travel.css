@@ -1,0 +1,17 @@
+.address{
+	margin:25px 0 30px;
+}
+
+.address .line{
+	font-size:16px;
+	font-family:'Monte Carlo';
+	margin-top:4px;
+}
+
+iframe#map{
+	background:#eee;
+	width :90%;
+	margin:auto;
+	height:350px;
+	border:1px solid rgba(0,0,0,0.1) !important;
+}

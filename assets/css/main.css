@@ -4,7 +4,6 @@ html, body{
 }
 
 html{
-	display:none;
 	background-color:#DCD0FF;
 	background-image:url( ../img/home_background.png );
 }
@@ -43,12 +42,21 @@ a{
 	font-family: 'MonteCarlo', cursive;
 	font-size:40px;
 	color:#323232;
+	position:relative;
 }
 
 .title hr{
 	border-color:rgba(0,0,0,0.15);
 	width:75px;
 	margin:auto;
+}
+
+.title a{
+	position:absolute;
+	width :100%;
+	height:100%;
+	left:0;
+	top :0;
 }
 
 .content .button-column{
@@ -60,7 +68,7 @@ a{
 
 .title .sub-title{
 	font-size:18px;
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Cormorant Garamond';
 	margin-top:10px;
 	margin-bottom:5px;
 	color:#1a1a1a;

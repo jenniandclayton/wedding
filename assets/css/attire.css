@@ -1,0 +1,36 @@
+.attire-label{
+	font-size:24px;
+	margin:25px 0;
+	font-family:'Cormorant Garamond';
+}
+
+.attire-label hr{
+	margin:5px auto;
+	width:70px;
+	border-color:rgba(0,0,0,0.25);
+}
+
+.attire-desc{
+	font-size:14px;
+	font-family:'Lora';
+	margin:0 105px 15px;	
+	text-align:left;
+}
+
+.attire-photos{
+	width:50%;
+}
+
+.attire-photos img{
+	width:75%;
+	border:1px solid #ccc;
+	margin-top:25px;
+	outline:5px solid #f5f5f5;
+	box-shadow:0 0 0 7px #e2e2e2;
+}
+
+@media (max-width: 550px){
+	.attire-desc{
+		margin:0 30px 15px;
+	}
+}
