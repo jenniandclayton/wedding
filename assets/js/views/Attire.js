@@ -24,6 +24,9 @@ WED.views.attire.draw = function(){
 				].join('<br><br>') +
 			'</div>' +
 			'<div class="attire-photos">' + 
+				this.get_html_images( 'women', 3 ) + 
+			'</div>' +
+			'<div class="attire-photos">' + 
 				this.get_html_images( 'men', 3 ) + 
 			'</div>'
 	});

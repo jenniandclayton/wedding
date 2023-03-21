@@ -19,6 +19,7 @@
 
 .attire-photos{
 	width:50%;
+	display:inline-block;
 }
 
 .attire-photos img{
