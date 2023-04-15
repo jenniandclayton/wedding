@@ -14,7 +14,7 @@ WED.views.wedding_day.load = function(){
 			time     : '4:00 PM',
 		},
 		{
-			name     : 'Cocktail Hour',
+			name     : 'Reception',
 			location : locations[ 'lower' ],
 			time     : '4:45 PM',
 		},
@@ -24,7 +24,7 @@ WED.views.wedding_day.load = function(){
 			time     : '6:00 PM',
 		},
 		{
-			name     : 'Dance / Reception',
+			name     : 'Dance / Social',
 			location : locations[ 'both' ],
 			time     : '8:00 PM - midnight',
 		},

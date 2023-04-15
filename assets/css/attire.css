@@ -30,6 +30,10 @@
 	box-shadow:0 0 0 7px #e2e2e2;
 }
 
+.attire-photos img:hover{
+	outline:5px solid #DED4FF;
+}
+
 @media (max-width: 550px){
 	.attire-desc{
 		margin:0 30px 15px;

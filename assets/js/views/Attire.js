@@ -7,7 +7,10 @@ WED.views.attire.load = function(){
 WED.views.attire.get_html_images = function( group, num ){
 	var output = '';
 	for( var i = 1; i <= num; i++ ){
-		output += '<img src="./assets/img/attire/' + group + '_0' + i + '.jpg" />';
+		var url = './assets/img/attire/' + group + '_0' + i + '.jpg';
+		output += '<a href="' + url + '" target="_blank">' +
+			'<img src="' + url + '" />' +
+		'</a>';
 	}
 	return output;
 };
