@@ -3,7 +3,7 @@ WED.hashlink = new JL.hashlinks({
 });
 
 WED.hashlink.on_start = function(){
-	var view_name = ( this.params.view.value || '' ).split(' ').join('_');
+	var view_name = ( this.params.view.value || '' ).replace( /[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "" ).split(' ').join('_');
 
 	var view = WED.views[ view_name ] || WED.views[ WED.config.default_view ];
 

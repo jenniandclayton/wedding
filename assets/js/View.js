@@ -1,10 +1,16 @@
 WED.view = {};
 
-WED.view.html_page_header = function( name ){
+WED.view.html_page_header = function( name, top ){
 	return '<div class="page-header">' +
+		( top ? '<img class="line-break" src="./assets/img/simple_line_break.png" />' : '' ) +
 		name + 
 		'<img class="line-break" src="./assets/img/simple_line_break.png" />' +
 	'</div>';
+};
+
+WED.view.html_email_us = function(){
+	var addr = 'jenniandclayton@gmail.com';
+	return '<a class="contact-link" href="mailto:' + addr + '">' + addr + '</a>';
 };
 
 WED.view.draw = function( p ){

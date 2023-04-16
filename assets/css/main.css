@@ -36,6 +36,13 @@ a{
 	width:100%;
 }
 
+.content-desc{
+	font-size:14px;
+	font-family:'Lora';
+	margin:0 105px 15px;	
+	text-align:left;
+}
+
 .title{
 	text-align:center;
 	height:100px;
@@ -96,9 +103,18 @@ a{
 	margin:5px auto 0;
 }
 
+.contact-link{
+	text-decoration:underline;
+	color:#442990;
+}
+
 @media (max-width: 550px){
 	.content{
 		width:300px;
+	}
+
+	.content-desc{
+		margin:0 30px 15px;
 	}
 
 	.title{

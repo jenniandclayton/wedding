@@ -1,7 +1,7 @@
 WED.views.home = {};
 
 WED.views.home.load = function(){
-	this.pages = [ 'RSVP', 'Travel', 'Attire', 'Wedding Day', 'Registry' ];
+	this.pages = [ 'RSVP', 'Travel', 'Attire', 'Food & Drink', 'Wedding Day', 'Registry' ];
 
 	this.draw();
 };

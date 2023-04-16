@@ -19,7 +19,7 @@ WED.views.attire.draw = function(){
 	WED.view.draw({
 		content : WED.view.html_page_header( this.name ) + 
 			'<div class="attire-label">Semi-Formal</div>' +
-			'<div class="attire-desc">' + 
+			'<div class="content-desc">' + 
 				[ 
 					'We recommend semi-formal attire.', 
 					'Our ceremony and reception will be indoors.',

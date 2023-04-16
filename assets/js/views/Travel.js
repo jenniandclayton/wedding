@@ -18,6 +18,9 @@ WED.views.travel.draw = function(){
 					return '<div class="line">' + line + '</div>';
 				}).join('') +
 			'</div>' +
-			this.map_iframe,
+			this.map_iframe +
+			'<br><br><br>' +
+			WED.view.html_page_header( 'Hotels', true ) + 
+			'',
 	});
 };

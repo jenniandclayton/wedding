@@ -1,0 +1,25 @@
+.registry-link{
+	display:inline-block;
+	position:relative;
+	font-size:14px;
+	width:100px;
+	padding:10px;
+	margin:10px auto;
+	background:#fff;
+	border:5px solid transparent;
+	box-shadow:0 0 0 1px inset #a1a1a1, 2px 2px 6px -1px rgba(0,0,0,0.5);
+	outline   :1px solid       #a1a1a1;
+	cursor:pointer;
+	font-family:'Lora', serif;
+}
+
+.registry-link:hover{
+	background  :#F2EDFF;
+	border-color:#E1D6FF;
+}
+
+.registry-link img{
+	height:16px;
+	margin-right:9px;
+	margin-bottom:-3px;
+}
