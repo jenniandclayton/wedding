@@ -20,7 +20,12 @@ WED.views.travel.draw = function(){
 			'</div>' +
 			this.map_iframe +
 			'<br><br><br>' +
-			WED.view.html_page_header( 'Hotels', true ) + 
-			'',
+			WED.view.html_page_header( 'Hotels', true ) +
+			'<br>' +
+			'<div class="content-desc">' + 
+				[ 
+					'Still to be decided.'
+				].join('<br><br>') +
+			'</div>',
 	});
 };

@@ -9,8 +9,7 @@ WED.view.html_page_header = function( name, top ){
 };
 
 WED.view.html_email_us = function(){
-	var addr = 'jenniandclayton@gmail.com';
-	return '<a class="contact-link" href="mailto:' + addr + '">' + addr + '</a>';
+	return '<a class="contact-link" href="mailto:' + WED.config.email_address + '">' + WED.config.email_address + '</a>';
 };
 
 WED.view.draw = function( p ){
