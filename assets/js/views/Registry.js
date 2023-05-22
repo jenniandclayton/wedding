@@ -2,8 +2,8 @@ WED.views.registry = { name : 'Registry' };
 
 WED.views.registry.load = function(){
 	this.links = [
-		{ name : 'Amazon', url : 'https://www.amazon.com/' },
-		{ name : 'Target', url : 'https://www.target.com/' },
+		{ name : 'Amazon', url : 'https://www.amazon.com/wedding/jenni-sterk-clayton-suplinski-may-2024/registry/KG8R5ZBFDD38' },
+		{ name : 'Target', url : 'https://www.target.com/gift-registry/gift/jenni-sterk-clayton-suplinski' },
 	];
 
 	this.draw();
