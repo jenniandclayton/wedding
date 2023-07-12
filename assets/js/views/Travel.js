@@ -21,10 +21,24 @@ WED.views.travel.draw = function(){
 			this.map_iframe +
 			'<br><br><br>' +
 			WED.view.html_page_header( 'Hotels', true ) +
-			'<br>' +
+			'<div class="address">' +
+				[
+					'Cambria Hotel - Madison East',
+					'5045 Eastpark Blvd',
+					'Madison, WI 53718',
+				].map(function( line ){
+					return '<div class="line">' + line + '</div>';
+				}).join('') +
+			'</div>' +
 			'<div class="content-desc">' + 
 				[ 
-					'Still to be decided.'
+					'If you are looking for a hotel room nearby, we have reserved a room block at the Cambria Hotel - Madison East.',
+					'To reserve a room, please call the front desk at 608-241-7070 and mention your <b>arrival date</b> and the <b>Sterk - Suplinski Wedding</b> OR book online using this link',
+					'<a class="contact-link" href="https://www.choicehotels.com/reservations/groups/rh28i9" target="_blank">https://www.choicehotels.com/reservations/groups/rh28i9</a>',
+					'We have rooms available for May 3rd and May 4th.',
+					'For best availability, please book by <b>Saturday, February 3rd</b>. The final day to book at the discounted rate is <b>Wednesday, April 3rd</b>.',
+					'Hotel check-in time is 3:00 PM on the day of arrival. Check-out is by 11:00 AM on the day of departure.',
+					'If you are traveling to/from the Dane County Regional Airport (Madison airport), the Cambria Hotel offers a shuttle van service for guests on request. Shuttle rides can be set up in advance to accommodate flights. Otherwise, you can call the hotel upon arrival in Madison and it\'ll be about a 15 minute wait for pickup.',
 				].join('<br><br>') +
 			'</div>',
 	});
