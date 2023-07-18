@@ -71,6 +71,7 @@ a{
 	text-align:center;
 	vertical-align:top;
 	padding-top:5px;
+	max-width:450px;
 }
 
 
@@ -107,6 +108,7 @@ a{
 .contact-link{
 	text-decoration:underline;
 	color:#442990;
+	word-wrap:break-word;
 }
 
 @media (max-width: 550px){
