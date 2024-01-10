@@ -19,10 +19,19 @@ WED.views.food__drink.draw = function(){
 			'<br>' +
 			WED.view.html_page_header( 'Dinner Options', true ) +
 			'<br>' +
-			'<div class="content-desc">' + 
+			'<div class="timeline">' + 
 				[ 
-					'Still to be decided.'
-				].join('<br><br>') +
+					{ name : 'New York Strip Steak', sides : [ 'America\'s most popular steak. Expertly cut and rubbed with house seasoning. (Gluten-free)'                                                        , 'Served with a garden salad, roasted garlic mashed potatoes, and yellow squash with baby zucchini.' ], },
+					{ name : 'Bruschetta Chicken'  , sides : [ 'Boneless skinless grilled Italian marinated chicken breast. Topped with tomato, onion, basil, and shredded Parmesan. (Gluten-free, contains dairy)', 'Served with a garden salad, roasted garlic mashed potatoes, and yellow squash with baby zucchini.' ], },
+					{ name : 'Roasted Red Pepper'  , sides : [ 'Roasted fresh red pepper stuffed with a rice pilaf and mixture of vegetables. Served over marinara sauce. (Vegan)'                                 , 'Served with a garden salad.' ], },
+					{ name : 'Kid\'s Meal'         , sides : [ 'Chicken strips with a side of french fries and garden salad.', 'Include age of person ordering this meal.' ], },
+				].map(function( r ){
+					return '<div class="event">' +
+						'<div class="name">' + r.name + '</div>' +
+						'<hr>' +
+						'<div class="loc">' + r.sides.join('<br>&bull;<br>') + '</div>' +
+					'</div>';
+				}).join('<br><br>') +
 			'</div>',
 	});
 };

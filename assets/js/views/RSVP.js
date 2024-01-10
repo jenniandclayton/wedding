@@ -42,13 +42,13 @@ WED.views.rsvp.draw = function(){
 						[
 							'Guests Attending:',
 							'    1) Anakin Skywalker',
-							'        -Veggie Dinner',
+							'        -Roasted Red Pepper',
 							'    2) Padmé Amidala',
-							'        -Chicken Dinner',
+							'        -Bruschetta Chicken',
 							'    3) Leia Organa',
-							'        -Kid\'s Meal',
+							'        -Kid\'s Meal (age 4)',
 							'    4) Luke Skywalker',
-							'        -Kid\'s Meal',
+							'        -Kid\'s Meal (age 4)',
 							'        -Will need booster seat',
 						].join('<br>') +
 				'</div>' +

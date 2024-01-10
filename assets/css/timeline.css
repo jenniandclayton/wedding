@@ -28,6 +28,9 @@
 .timeline .event .loc{
 	font-style:italic;
 	font-size:16px;
+	max-width:350px;
+	margin:auto;
+	padding:0 5px;
 }
 
 .timeline .event .time{
