@@ -6,17 +6,19 @@ WED.views.rsvp.load = function(){
 
 WED.views.rsvp.draw = function(){
 	WED.view.draw({
-		content : WED.view.html_page_header( 'Invitation' ) +
-			'<br>' +
-			'<div class="content-desc">' + 
-				[ 
-					'Invitations will be sent via email in early 2024.',
-					'If you haven\'t done so already, please send your preferred email address to ' + WED.view.html_email_us(),
-					'After receiving your invitation email, please send us your RSVP response.',
-				].join('<br><br>') +
-			'</div>' +
-			'<br>' +
-			WED.view.html_page_header( this.name, true ) + 
+		content : '' +
+			// WED.view.html_page_header( 'Invitation' ) +
+			// '<br>' +
+			// '<div class="content-desc">' + 
+			// 	[ 
+			// 		'Invitations will be sent via email in early 2024.',
+			// 		'If you haven\'t done so already, please send your preferred email address to ' + WED.view.html_email_us(),
+			// 		'After receiving your invitation email, please send us your RSVP response.',
+			// 	].join('<br><br>') +
+			// '</div>' +
+			// '<br>' +
+			// WED.view.html_page_header( this.name, true ) + 
+			WED.view.html_page_header( this.name ) + 
 			'<br>' +
 			'<div class="content-desc">' + 
 				[ 
